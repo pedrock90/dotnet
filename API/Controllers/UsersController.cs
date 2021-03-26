@@ -30,7 +30,7 @@ namespace API.Controllers
         {
             //var user = _context.Users.Find(id);
 
-            //return user;
+            //return user; // removed
 
             return await _context.Users.FindAsync(id);
         }
