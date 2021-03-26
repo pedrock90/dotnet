@@ -1,0 +1,16 @@
+CMD -> dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API/
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef database update
+
+dotnet run
+
+git init
+dotnet new gitignore
+
+
+--- ANGULAR
+ng new client
+ng serve
+
