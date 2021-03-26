@@ -10,6 +10,7 @@ git init
 dotnet new gitignore
 
 
+npm install -g @angular/cli
 --- ANGULAR
 ng new client
 ng serve
