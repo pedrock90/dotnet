@@ -16,9 +16,28 @@ npm install -g @angular/cli
 ng new client  --> NEW ANGULAR APLICATION, select No to strict mode
 ng serve	--> RUN SERVER
 
+-- CREATE COMPONENTS ON ANGULAR
+ng g c register --skip-tests
 
 
 npm cache verify
 dotnet dev-certs https --clean
 
 dotnet dev-certs https --trust
+
+
+-- When we are receiving data from a parent it goes in square brackets
+ <app-register [usersFromHomeComponent]="users"></app-register> 
+-- When we are sending data from a child it goes in parentesis and then call a function on parent component
+<app-register [usersFromHomeComponent]="users" (cancelRegister)="FUNCTION FROM PARENT" ></app-register> 
+<app-register [usersFromHomeComponent]="users" (cancelRegister)="cancelRegisterMode($event)" ></app-register> 
+
+
+ROUTE GUARDS
+ng g guard auth --skip-tests
+
+INSTALL BOOTS THEMES -> https://bootswatch.com/slate/
+npm install bootswatch           ON CLIENT FOLDER
+
+
+
